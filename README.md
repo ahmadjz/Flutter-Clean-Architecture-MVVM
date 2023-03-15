@@ -1,16 +1,23 @@
-# api_mvvm
+# Flutter Clean Architecture MVVM
 
-A new Flutter project.
+This is a Flutter project that demonstrates the implementation of the Clean Architecture and MVVM pattern. The app retrieves drinks data from an external API and caches it with Shared Preferences for offline viewing.
 
-## Getting Started
+## Project Architecture
 
-This project is a starting point for a Flutter application.
+The project is structured using the Clean Architecture pattern, which separates the codebase into three main layers:
 
-A few resources to get you started if this is your first Flutter project:
+- Presentation Layer (UI) - Contains the UI code and its related classes.
+- Domain Layer - Contains the use cases, business logic, and entities of the app.
+- Data Layer - Contains the implementation of data sources, repositories, and models.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+The project also implements the MVVM pattern in the Presentation Layer, which separates the UI code from the business logic and improves testability.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Here is a diagram illustrating the project architecture:
+
+![Clean-Architecture-Flutter-Diagram](https://user-images.githubusercontent.com/46372418/225314861-2d5e98b9-06a5-453b-8ebf-e6a349a8a23c.jpg)
+
+## External API
+The app retrieves drinks data from [TheCocktailDB API](https://www.thecocktaildb.com/api.php).
+
+## Local Storage
+The app uses Shared Preferences to cache the retrieved drinks data for offline viewing.
