@@ -21,3 +21,6 @@ The app retrieves drinks data from [TheCocktailDB API](https://www.thecocktaildb
 
 ## Local Storage
 The app uses Shared Preferences to cache the retrieved drinks data for offline viewing.
+
+## Screenshots 
+![Screenshot_1678885585](https://user-images.githubusercontent.com/46372418/225318296-a9aa0e49-876c-45cb-beef-93632b55d197.png)
